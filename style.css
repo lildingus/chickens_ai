@@ -1,16 +1,24 @@
+
+/* Style for the image grid container */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
-  grid-gap: 5px; /* Adjust the gap between images */
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Adjust the spacing between grid items */
+  max-width: 600px; /* Set a maximum width for the grid */
+  margin: 0 auto; /* Center the grid horizontally */
 }
 
+/* Style for each grid item */
 .image-grid img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Make images fill their containers */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
-
-
+/* Hover effect - scale up the image */
+.image-grid img:hover {
+  transform: scale(1.1); /* Increase scale on hover */
+}
 
 
 
